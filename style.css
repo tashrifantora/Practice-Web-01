@@ -35,3 +35,45 @@ nav>ul>li:hover>ul {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 3px solid gray;
+    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+@keyframes abc {
+    from {
+        background-color: lightgreen;
+        top: 0;
+
+    }
+
+    to {
+        background-color: aqua;
+        top: 500px;
+    }
+}
+
+.hot {
+    width: 700px;
+    height: 600px;
+    border: 2px solid;
+    background-color: lightcoral;
+}
+
+.cool {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    border: 2px solid;
+    position: relative;
+    animation: abc 1s ease-in-out 0.5s infinite alternate;
+    animation-play-state: running;
+}
